@@ -1,0 +1,31 @@
+------ Parâmetros do modelo FOPTD pelo método dos 2-pontos
+
+K = 0.7087
+T = 148.0700
+L = 33.8800
+
+--- Modelo FOPTD obtido pelo método dos 2-pontos
+
+G_2pt(s) = (K / (1 + T)) * e^-L
+G_2pt(s) = (0.7087 / (1 + 148.0700)) * e^-33.8800
+
+--- Integral square error (ISE), integral do erro quadrático do modelo FOPTD
+
+ISE_2pt = 550.6433
+
+------ Parâmetros do modelo FOPTD por PSO
+
+K = 0.7243
+T = 162.4602
+L = 33.3980
+
+--- Modelo FOPTD obtido por PSO
+
+G_pso(s) = (K / (1 + T)) * e^-L
+G_pso(s) = (0.7243 / (1 + 162.4602)) * e^-33.3980
+
+--- Integral square error (ISE), integral do erro quadrático do modelo FOPTD
+
+ISE_pso = 282.0667
+
+---------
